@@ -1,0 +1,12 @@
+<ion-view view-title="Categor&iacute;as">
+  <ion-content>
+    <h1>Categor&iacute;a: {{categoriaName}}</h1>
+    <ion-list>
+      <ion-item ng-repeat="playlist in products" >
+        <img ng-src="{{playlist.img1}}" > <br/>
+        {{playlist.name}}  - {{playlist.price}} <br/>
+        {{playlist.desc}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
